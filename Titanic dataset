@@ -87,3 +87,21 @@ y_pred=lr.predict(X_test)
 accuracy = accuracy_score(Y_test,y_pred)
 
 print("Accuracy :", accuracy)
+
+#MultinomialNB
+nb.fit(X_train, Y_train)
+y_pred=nb.predict(X_test)
+accuracy = accuracy_score(Y_test,y_pred)
+print("Accuracy NB:", accuracy)
+
+#DecisionTree
+dt.fit(X_train, Y_train)
+y_pred=dt.predict(X_test)
+accuracy = accuracy_score(Y_test,y_pred)
+print("Accuracy dt:", accuracy)
+
+#GradientBoosting
+gbn.fit(X_train, Y_train)
+y_pred=gbn.predict(X_test)
+accuracy = accuracy_score(Y_test,y_pred)
+print("Accuracy gbn:", accuracy)
